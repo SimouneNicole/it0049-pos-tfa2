@@ -18,7 +18,8 @@ final class RoutesTest extends CIUnitTestCase
         $result = $this->get('/');
 
         $result->assertOK();
-        $result->assertSee('Home');
+        $result->assertSee('Point of Sale');
+        $result->assertSee('Customer and staff records, kept in one clear place.');
         $result->assertSee('POS');
     }
 
@@ -28,6 +29,7 @@ final class RoutesTest extends CIUnitTestCase
 
         $result->assertOK();
         $result->assertSee('About');
+        $result->assertSee('A simple place to view customer contact details and staff roles.');
         $result->assertSee('POS');
     }
 
@@ -37,9 +39,9 @@ final class RoutesTest extends CIUnitTestCase
 
         $result->assertOK();
         $result->assertSee('Customer Accounts');
-        $result->assertSee('Full Name');
-        $result->assertSee('Email Address');
-        $result->assertSee('Phone Number');
+        $result->assertSee('Full name');
+        $result->assertSee('Email address');
+        $result->assertSee('Phone number');
         $result->assertSee('Eleanor Vance');
         $result->assertSee('eleanor.vance@example.com');
         $result->assertSee('+1 (555) 234-5678');
@@ -53,7 +55,7 @@ final class RoutesTest extends CIUnitTestCase
         $result->assertOK();
         $result->assertSee('User Accounts');
         $result->assertSee('Username');
-        $result->assertSee('Full Name');
+        $result->assertSee('Full name');
         $result->assertSee('Role');
         $result->assertSee('clara.delgado');
         $result->assertSee('Clara Delgado');

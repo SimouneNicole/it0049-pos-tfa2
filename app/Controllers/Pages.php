@@ -7,7 +7,7 @@ class Pages extends BaseController
     public function home(): string
     {
         $data = [
-            'title' => 'Home',
+            'title' => 'Point of Sale',
         ];
 
         return view('pages/home', $data);

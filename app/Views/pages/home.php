@@ -1,12 +1,16 @@
 <?= $this->extend('layouts/main') ?>
 
 <?= $this->section('content') ?>
-<div class="page-header">
-    <h1 class="page-title"><?= esc($title) ?></h1>
-</div>
-
-<div class="prose">
-    <p>Welcome to the POS management interface. This application provides central access to store customer accounts and staff user profiles.</p>
-    <p>Use the navigation above to browse customer listings and user accounts.</p>
+<div class="hero-split">
+    <div class="hero-copy">
+        <h1 class="page-title"><?= esc($title) ?></h1>
+        <p class="lead-statement">Customer and staff records, kept in one clear place.</p>
+    </div>
+    <div class="hero-lens-stage" aria-hidden="true">
+        <div class="glass-lens">
+            <div class="lens-glow"></div>
+            <div class="lens-ring"></div>
+        </div>
+    </div>
 </div>
 <?= $this->endSection() ?>
