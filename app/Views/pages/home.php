@@ -7,15 +7,15 @@
 </div>
 
 <div class="prose">
-    <p>Welcome to the POS central management interface. This application provides core access to store management, customer records, and authorized user accounts.</p>
+    <p>Welcome to the POS central management interface. This system provides store staff and administrators with immediate access to daily point-of-sale directories.</p>
 
-    <h2>System Modules</h2>
+    <h2>Store Modules</h2>
     <ul>
-        <li><strong>Customer Accounts:</strong> Directory of registered client profiles, contact points, and account records.</li>
-        <li><strong>User Accounts:</strong> Registry of authenticated system personnel, operators, and role assignments.</li>
-        <li><strong>System Information:</strong> Overview of point-of-sale operational architecture and platform standards.</li>
+        <li><strong>Customer Accounts:</strong> Access customer contact records, email addresses, and phone directories.</li>
+        <li><strong>User Accounts:</strong> Review active staff members, cashier accounts, and management roles.</li>
+        <li><strong>System Information:</strong> Read operational guidelines and store terminal information.</li>
     </ul>
 
-    <p>Select a section from the primary navigation above to access system records and configuration details.</p>
+    <p>Select a section from the navigation menu above to review account listings and manage store data.</p>
 </div>
 <?= $this->endSection() ?>
