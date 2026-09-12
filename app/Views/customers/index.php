@@ -10,17 +10,14 @@
     <table class="data-table">
         <thead>
             <tr>
-                <th scope="col">#</th>
                 <th scope="col">Full Name</th>
                 <th scope="col">Email Address</th>
                 <th scope="col">Phone Number</th>
             </tr>
         </thead>
         <tbody>
-            <?php $i = 1; ?>
             <?php foreach ($customers as $customer): ?>
                 <tr>
-                    <td class="mono"><?= esc((string) $i++) ?></td>
                     <td><strong><?= esc($customer['fullName']) ?></strong></td>
                     <td class="mono"><?= esc($customer['email']) ?></td>
                     <td><?= esc($customer['phone']) ?></td>

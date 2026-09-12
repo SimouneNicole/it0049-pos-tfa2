@@ -18,7 +18,7 @@ final class RoutesTest extends CIUnitTestCase
         $result = $this->get('/');
 
         $result->assertOK();
-        $result->assertSee('System Overview');
+        $result->assertSee('Home');
         $result->assertSee('POS');
     }
 
@@ -27,7 +27,8 @@ final class RoutesTest extends CIUnitTestCase
         $result = $this->get('about');
 
         $result->assertOK();
-        $result->assertSee('About POS');
+        $result->assertSee('About');
+        $result->assertSee('POS');
     }
 
     public function testCustomersPageLoadsWithRecords(): void
@@ -36,6 +37,9 @@ final class RoutesTest extends CIUnitTestCase
 
         $result->assertOK();
         $result->assertSee('Customer Accounts');
+        $result->assertSee('Full Name');
+        $result->assertSee('Email Address');
+        $result->assertSee('Phone Number');
         $result->assertSee('Eleanor Vance');
         $result->assertSee('eleanor.vance@example.com');
         $result->assertSee('+1 (555) 234-5678');
@@ -48,6 +52,9 @@ final class RoutesTest extends CIUnitTestCase
 
         $result->assertOK();
         $result->assertSee('User Accounts');
+        $result->assertSee('Username');
+        $result->assertSee('Full Name');
+        $result->assertSee('Role');
         $result->assertSee('clara.delgado');
         $result->assertSee('Clara Delgado');
         $result->assertSee('System Administrator');

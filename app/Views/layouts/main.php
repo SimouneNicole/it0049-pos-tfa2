@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= esc($title ?? 'Overview') ?> | POS</title>
+    <title><?= esc($title ?? 'Home') ?> | POS</title>
     <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
 </head>
 <body>
@@ -26,7 +26,7 @@
         </main>
 
         <footer class="site-footer">
-            <p>&copy; <?= date('Y') ?> POS. Point of Sale System.</p>
+            <p>&copy; <?= date('Y') ?> POS</p>
         </footer>
     </div>
 </body>

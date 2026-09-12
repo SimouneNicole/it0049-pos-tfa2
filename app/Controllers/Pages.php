@@ -7,7 +7,7 @@ class Pages extends BaseController
     public function home(): string
     {
         $data = [
-            'title' => 'System Overview',
+            'title' => 'Home',
         ];
 
         return view('pages/home', $data);
@@ -16,7 +16,7 @@ class Pages extends BaseController
     public function about(): string
     {
         $data = [
-            'title' => 'About POS',
+            'title' => 'About',
         ];
 
         return view('pages/about', $data);

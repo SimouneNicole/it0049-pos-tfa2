@@ -10,17 +10,14 @@
     <table class="data-table">
         <thead>
             <tr>
-                <th scope="col">#</th>
                 <th scope="col">Username</th>
                 <th scope="col">Full Name</th>
-                <th scope="col">System Role</th>
+                <th scope="col">Role</th>
             </tr>
         </thead>
         <tbody>
-            <?php $i = 1; ?>
             <?php foreach ($users as $user): ?>
                 <tr>
-                    <td class="mono"><?= esc((string) $i++) ?></td>
                     <td class="mono"><strong><?= esc($user['username']) ?></strong></td>
                     <td><?= esc($user['fullName']) ?></td>
                     <td><span class="badge"><?= esc($user['role']) ?></span></td>
