@@ -4,7 +4,7 @@ A clean, minimalist Point of Sale (POS) foundation built on CodeIgniter 4. This 
 
 ## System Requirements
 
-- **PHP**: 8.1 or higher (configured with `intl`, `mbstring`, `json`)
+- **PHP**: 8.2 or higher (configured with `intl`, `mbstring`, `json`)
 - **Composer**: 2.0 or higher
 - **Web Server**: Built-in PHP development server or Apache / Nginx
 
