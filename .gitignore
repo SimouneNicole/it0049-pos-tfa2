@@ -124,3 +124,12 @@ _modules/*
 
 /results/
 /phpunit.xml
+
+#-------------------------
+# Assessment & Brief Documentation
+#-------------------------
+*.docx
+IT0049 - TFA2 - From Arrays to a Real Database (CodeIgniter POS).docx
+/doc_images/
+doc_images/
+*.png
