@@ -16,7 +16,7 @@
             <tbody>
                 <?php foreach ($customers as $customer): ?>
                     <tr>
-                        <td class="cell-primary"><?= esc($customer['fullName']) ?></td>
+                        <td class="cell-primary"><?= esc($customer['full_name'] ?? $customer['fullName']) ?></td>
                         <td><?= esc($customer['email']) ?></td>
                         <td><?= esc($customer['phone']) ?></td>
                     </tr>
